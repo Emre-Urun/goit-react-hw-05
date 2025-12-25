@@ -1,0 +1,50 @@
+.container {
+  padding: 20px 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  background-color: #333;
+  border: 2px solid transparent;
+  border-radius: 50px; /* Yuvarlak kenarlar */
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.input:focus {
+  background-color: #444;
+  border-color: var(--accent-color); /* Tıklayınca kırmızı kenar */
+}
+
+.btn {
+  padding: 12px 30px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+.error {
+  text-align: center;
+  color: var(--accent-color);
+  font-weight: bold;
+}

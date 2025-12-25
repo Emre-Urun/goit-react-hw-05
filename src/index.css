@@ -1,0 +1,32 @@
+:root {
+  --bg-color: #141414; /* Netflix Siyahı */
+  --card-bg: #1f1f1f; /* Kartlar için biraz daha açık gri */
+  --text-primary: #ffffff; /* Beyaz yazılar */
+  --text-secondary: #b3b3b3; /* Gri açıklama yazıları */
+  --accent-color: #e50914; /* İkonik Kırmızı (Vurgu rengi) */
+  --hover-color: #ff3d47; /* Üzerine gelince açılan kırmızı */
+  font-family: "Inter", system-ui, -apple-system, sans-serif; /* Modern Font */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased; /* Yazıları pürüzsüzleştirir */
+}
+
+/* Scrollbar (Kaydırma çubuğu) tasarımı */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}

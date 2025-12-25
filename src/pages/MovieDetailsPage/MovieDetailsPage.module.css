@@ -1,0 +1,118 @@
+.container {
+  padding: 20px 0;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Sayfa açılış animasyonu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btnBack {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* Şeffaf gri buton */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btnBack:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.movieInfo {
+  display: flex;
+  gap: 40px;
+  background-color: #1f1f1f;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.poster {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.details {
+  flex: 1;
+}
+
+.details h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.details p {
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.details h3 {
+  margin-top: 30px;
+  color: #fff;
+  border-left: 4px solid var(--accent-color); /* Başlık yanına kırmızı çizgi */
+  padding-left: 10px;
+}
+
+/* Alt Menü (Cast / Reviews Linkleri) */
+.additionalInfo {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.additionalInfo h3 {
+  margin-bottom: 20px;
+}
+
+.infoList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.infoLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #333;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.infoLink:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+/* Mobil Uyum */
+@media (max-width: 768px) {
+  .movieInfo {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .details {
+    text-align: center;
+  }
+  .poster {
+    width: 200px;
+  }
+}

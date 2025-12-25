@@ -1,0 +1,25 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.item {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.author {
+  color: var(--accent-color);
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.content {
+  color: #ddd;
+  line-height: 1.6;
+  font-size: 14px;
+}
